@@ -19,7 +19,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)chat.rocket.reactnative</string>
+		<string>$(AppIdentifierPrefix)chat.khanoumi.reactnative</string>
 	</array>
 </dict>
 </plist>

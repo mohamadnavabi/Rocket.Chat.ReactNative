@@ -1,4 +1,4 @@
-package chat.rocket.reactnative.networking;
+package chat.khanoumi.reactnative.networking;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package chat.khanoumi.reactnative;
 
 import android.app.Application;
 
@@ -18,8 +18,8 @@ import org.unimodules.adapters.react.ReactModuleRegistryProvider;
 import java.util.Arrays;
 import java.util.List;
 
-import chat.rocket.reactnative.generated.BasePackageList;
-import chat.rocket.reactnative.networking.SSLPinningPackage;
+import chat.khanoumi.reactnative.generated.BasePackageList;
+import chat.khanoumi.reactnative.networking.SSLPinningPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 

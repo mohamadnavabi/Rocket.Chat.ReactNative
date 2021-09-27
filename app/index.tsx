@@ -30,6 +30,8 @@ import InAppNotification from './containers/InAppNotification';
 import { ActionSheetProvider } from './containers/ActionSheet';
 import debounce from './utils/debounce';
 import { isFDroidBuild } from './constants/environment';
+import Firebase from './notifications/firebase';
+import { Notifications } from 'react-native-notifications';
 
 RNScreens.enableScreens();
 
@@ -102,6 +104,11 @@ export default class Root extends React.Component<{}, IState> {
 	}
 
 	componentDidMount() {
+		// define firebase notification
+		const firebase = new Firebase();
+		firebase.registerChannel(['default']);
+		// TODO: add your custom channels here
+
 		this.listenerTimeout = setTimeout(() => {
 			Linking.addEventListener('url', ({ url }) => {
 				const parsedDeepLinkingURL = parseDeepLinking(url);
@@ -205,6 +212,7 @@ export default class Root extends React.Component<{}, IState> {
 
 	render() {
 		const { themePreferences, theme, width, height, scale, fontScale } = this.state;
+
 		return (
 			<SafeAreaProvider initialMetrics={initialWindowMetrics}>
 				<AppearanceProvider>

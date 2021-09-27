@@ -1,6 +1,6 @@
-package chat.rocket.reactnative.share;
+package chat.khanoumi.reactnative.share;
 
-import chat.rocket.reactnative.BuildConfig;
+import chat.khanoumi.reactnative.BuildConfig;
 
 import chat.rocket.SharePackage;
 

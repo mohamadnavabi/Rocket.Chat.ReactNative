@@ -1,4 +1,4 @@
-package chat.rocket.reactnative.networking;
+package chat.khanoumi.reactnative.networking;
 
 import java.util.Arrays;
 import java.util.Collections;
